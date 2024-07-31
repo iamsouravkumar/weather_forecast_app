@@ -67,7 +67,7 @@ const App = () => {
           <Forecast title="daily forecast" data={weather.daily} />
         </>
       }
-      <ToastContainer transition={Slide} autoClose={2000} theme="colored" newestOnTop={true} hideProgressBar={true} />
+      <ToastContainer transition={Slide} autoClose={1500} theme="colored" newestOnTop={true} hideProgressBar={true} />
     </div>
   )
 }
