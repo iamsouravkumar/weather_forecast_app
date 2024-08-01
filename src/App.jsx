@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import TopButtons from './components/TopButtons'
+// import TopButtons from './components/TopButtons'
+import Navbar from './components/Navbar'
 import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
 import TempAndDetails from './components/TempAndDetails'
@@ -57,7 +58,8 @@ const App = () => {
 
   return (
     <div className={`app mx-auto max-w-screen-xl mt-6 mb-6 py-4 rounded-md shadow-gray-400 shadow-xl bg-gradient-to-r ${formatBackground()}`}>
-      <TopButtons setQuery={setQuery} />
+      {/* <TopButtons setQuery={setQuery} /> */}
+      <Navbar setUnits={setUnits}/>
       <Inputs setQuery={setQuery} setUnits={setUnits} />
       {
         weather &&

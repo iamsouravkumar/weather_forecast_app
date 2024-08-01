@@ -34,7 +34,7 @@ const TempAndDetails = ({ weather: {
     {
       id: 3,
       Icon: FiWind,
-      title: "Wind Speed",
+      title: "Wind",
       value: `${speed.toFixed()} ${units === "metric" ? "km/h" : "m/h"}`
     },
   ]
@@ -77,7 +77,7 @@ const TempAndDetails = ({ weather: {
       <div className={`flex items-center justify-center py-6 text-2xl text-cyan-300`}>
         <p>{details}</p>
       </div>
-      <div className="flex flex-row items-center justify-between py-3">
+      <div className="flex flex-row items-center justify-between py-4">
         <img src={icon}
           alt="weather icon"
           className="w-20" />
@@ -94,7 +94,7 @@ const TempAndDetails = ({ weather: {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center space-x-10 text-sm py-3">
+      <div className="flex flex-row items-center justify-center space-x-10 text-sm py-3 md:space-x-0">
         {horizontalDetails.map(({ id, Icon, title, value }) => (
           <div key={id} className="flex flex-row items-center text-white">
             <Icon size={30} />

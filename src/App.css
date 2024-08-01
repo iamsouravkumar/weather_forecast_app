@@ -1,31 +1,46 @@
-@media (min-width:360px) and (max-width:768px){
-    .app{
+@media (min-width:360px) and (max-width:768px) {
+    .app {
         width: 95% !important;
         padding-left: 0.7rem !important;
         padding-right: 0.7rem !important;
     }
-    .top-buttons{
-        display: none;
-    }
-    .input{
+
+    /* .heading {
+        font-size: 1.2rem !important;
+    } */
+
+    .input {
         display: flex;
         justify-content: center;
         gap: 1rem;
     }
-    .input-2{
-        width: 50% !important;
+
+    .input-2 {
+        width: 70% !important;
     }
-    .p-name{
-       font-size: 1.5rem !important;
+
+    .p-name {
+        font-size: 1.5rem !important;
     }
-    .p-info{
-       font-size: 1.1rem !important;
+
+    .p-info {
+        font-size: 1.4rem !important;
+    }
+
+    .space-x-10 div {
+        margin-left: 6px !important;
     }
 }
 
-@media screen and  (min-width:1280px){
-    .app{
+@media screen and (min-width:1280px) {
+    .app {
         padding: 1.5rem 8rem !important;
+    }
+}
+
+@media  screen and (max-width:360px) {
+    .p-info{
+        font-size: 1.3rem !important;
     }
 }
 
