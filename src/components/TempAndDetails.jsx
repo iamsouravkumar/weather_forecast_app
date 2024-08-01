@@ -4,7 +4,7 @@ import { FiWind } from "react-icons/fi"
 import { GiSunrise, GiSunset } from "react-icons/gi"
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md"
 
-const TempAndDetails = ({weather: {
+const TempAndDetails = ({ weather: {
   details,
   icon,
   temp,
@@ -16,7 +16,7 @@ const TempAndDetails = ({weather: {
   sunset,
   feels_like,
 },
-units,
+  units,
 }) => {
   const VerticalDetails = [
     {
@@ -62,18 +62,25 @@ units,
       id: 4,
       Icon: MdKeyboardArrowDown,
       title: "Low",
-      value:`${temp_min.toFixed()}\u00B0C`
+      value: `${temp_min.toFixed()}\u00B0C`
     }
   ]
+//   const textColor = (temp) => {
+//     if (temp >= 35) return "red-300";
+//     else if (temp >= 26) return "orange-300";
+//     else if (temp <= 16) return "cyan-300";
+//     else return "blue-300";
+// }
+
   return (
     <div >
-      <div className="flex items-center justify-center py-6 text-xl text-cyan-300">
+      <div className={`flex items-center justify-center py-6 text-2xl text-cyan-300`}>
         <p>{details}</p>
       </div>
       <div className="flex flex-row items-center justify-between py-3">
-        <img src={icon} 
-        alt="weather icon" 
-        className="w-20" />
+        <img src={icon}
+          alt="weather icon"
+          className="w-20" />
 
         <p className="text-5xl text-white">{`${temp.toFixed()}\u00B0`}</p>
         <div className="flex flex-col space-y-3 items-start text-white">

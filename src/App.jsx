@@ -7,6 +7,7 @@ import Forecast from './components/Forecast'
 import getFormattedWeatherData from './services/WeatherServices'
 import { ToastContainer, Slide, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './App.css'
 
 const App = () => {
 
@@ -55,7 +56,7 @@ const App = () => {
   };
 
   return (
-    <div className={`mx-auto max-w-screen-xl mt-6 mb-6 px-32 py-4 rounded-md shadow-gray-400 shadow-xl bg-gradient-to-r ${formatBackground()}`}>
+    <div className={`app mx-auto max-w-screen-xl mt-6 mb-6 py-4 rounded-md shadow-gray-400 shadow-xl bg-gradient-to-r ${formatBackground()}`}>
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} setUnits={setUnits} />
       {
